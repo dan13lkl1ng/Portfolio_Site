@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="author" content="Daniel Kling">
+
+        <title>Portfolio Website</title>
+        <link rel="stylesheet" href="./css/normalize.min.css">
+        <link rel="stylesheet" href="./css/styles.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat%7CLato" rel="stylesheet">
+
+    </head>
+    <body itemscope itemtype="http://schema.org/Person">
+
+        <header>
+
+            <picture>
+                <source media="(min-width: 1200px)" srcset="img/Udacity_logo-1900_large_2x.png 2x, img/Udacity_logo-1600_large_1x.png" />
+                <source media="(min-width: 900px)" srcset="img/Udacity_logo-1000_medium.png" />
+                <source media="(min-width: 700px)" srcset="img/Udacity_logo-800_small.png" />
+                <img class="logo" src="img/Udacity_logo-500_xsmall.png" alt="Logo">
+            </picture>
+
+            <div class="header">
+                <h1 class="header__title">Daniel Kling</h1>
+                <h2 class="header__subtitle" itemprop="jobTitle">Diplom-Volkswirt</h2>
+                <h2 class="header__subsubtitle" itemprop="jobTitle">und Full-Stack-Entwickler</h2>
+            </div>
+        </header>
+
+        <main>
+        <picture>
+            <source media="(min-width: 1200px)" srcset="img/karlsruhe-1900_large_2x.jpg 2x, img/karlsruhe-1600_large_1x.jpg" />
+            <source media="(min-width: 900px)" srcset="img/karlsruhe-1000_medium.jpg" />
+            <source media="(min-width: 700px)" srcset="img/karlsruhe-800_small.jpg" />
+            <img id="hero" src="img/karlsruhe-500_xsmall.jpg" alt="Hero Picture">
+        </picture>
+
+            <section class="portfolio">
+
+                <h2 class="portfolio__heading">Featured Work</h2>
+
+                <section class="portfolio__item">
+                    <picture>
+                        <source media="(min-width: 1200px)" srcset="img/hage4-1900_large_2x.png 2x, img/hage4-1600_large_1x.png" />
+                        <source media="(min-width: 900px)" srcset="img/hage4-1000_medium.png" />
+                        <source media="(min-width: 700px)" srcset="img/hage4-800_small.png" />
+                        <img src="./img/hage4-500_xsmall.png" alt="screenshot of a website for renting a holiday home in Hage">
+                    </picture>
+                    <h3>Ferienhausvermietung</h3>
+                    <p class="portfolio__description">www.ferienhaus-hage.de</p>
+                </section>
+
+                <section class="portfolio__item">
+                    <picture>
+                        <source media="(min-width: 1200px)" srcset="img/pas-1900_large_2x.png 2x, img/pas-1600_large_1x.png" />
+                        <source media="(min-width: 900px)" srcset="img/pas-1000_medium.png" />
+                        <source media="(min-width: 700px)" srcset="img/pas-800_small.png" />
+                        <img src="./img/pas-500_xsmall.png" alt="screenshot of an online dating site">
+                    </picture>
+                    <h3>Partnervermittlung</h3>
+                    <p class="portfolio__description">www.paso5.de</p>
+                </section>
+
+                <section class="portfolio__item">
+                    <picture>
+                        <source media="(min-width: 1200px)" srcset="img/campingkling2-1900_large_2x.png 2x, img/campingkling2-1600_large_1x.png" />
+                        <source media="(min-width: 900px)" srcset="img/campingkling2-1000_medium.png" />
+                        <source media="(min-width: 700px)" srcset="img/campingkling2-800_small.png" />
+                        <img src="./img/campingkling2-500_xsmall.png" alt="screenshot of e-commerce site">
+                    </picture>
+                    <h3>Online Shop</h3>
+                    <p class="portfolio__description">www.camping-kling.de</p>
+                </section>
+            </section>
+        </main>
+    </body>
+</html>
