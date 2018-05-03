@@ -7,57 +7,59 @@ header {
     justify-content: space-between;
 }
 
-header h1,
-header h2 {
+h1 {
     font-weight: 300;
     text-transform: uppercase;
 }
 
-header h2 {
+h2 {
     font-size: 1em;
+    font-weight: 300;
+    text-transform: uppercase;
 }
 
 .header {
-    text-align: right;
     font-family: "Montserrat";
     padding-right: 0.3em;
+    text-align: right;
 }
 
 h3,
 .portfolio__heading {
-    padding-left: 3%;
     font-family: "Montserrat";
-    font-weight: 300;
-    text-transform: uppercase;
     font-size: 1.4em;
+    font-weight: 300;
+    margin-bottom: 0;
+    padding-left: 3%;
+    text-transform: uppercase;
 }
 
 .logo {
-    margin: auto 0;
     height: 80px;
+    margin: auto 0;
 }
 
-#hero{
-    max-width: 95vw;
+.hero {
     border-radius: 3px;
+    max-width: 95vw;
 }
 
 main {
+    align-content: center;
+    align-items: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-    align-content: center;
 }
 
 main::before{
+    background-color: grey;
+    border-radius: 3px;
     content: "";
     display: block;
     height: 5px;
+    margin: 0.4em 0 1em 0;
     width: 80vw;
-    background-color: grey;
-    margin: 0.4em 0em 1em 0em;
-    border-radius: 3px;
 }
 
 .portfolio__item img{
@@ -65,36 +67,32 @@ main::before{
 }
 
 .portfolio__item {
-    margin: 0.2em;
+    align-content: center;
+    align-items: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: flex-end;
-    align-content: center;
+    margin: 0.2em;
 }
 
 .portfolio__item p {
-    margin-top: 0;
     font-size: 0.9em;
     margin-bottom: 2.4em;
+    margin-top: 0;
 }
-
-.portfolio__item h3 {
-    margin-bottom: 0;
-}
-
 
 .portfolio__heading {
-    width: 100vw;
+    flex-basis: 100vw;
+    flex-grow: 1;
 }
 
 .portfolio__item picture {
-    margin: 0.2em;
+    align-content: center;
+    align-items: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: flex-end;
-    align-content: center;
+    margin: 0.2em;
 }
 
 header>picture {
@@ -124,7 +122,7 @@ header>picture {
         }
 
         .portfolio__item img {
-            box-shadow: 10px 10px 21px 0px rgba(0,0,0,0.75);
+            box-shadow: 10px 10px 21px 0 rgba(0,0,0,0.75);
         }
     }
 
@@ -140,11 +138,11 @@ header>picture {
         }
 
         main::before{
-            height: 5px;
-            width: 90vw;
             background-color: #a2a2a2;
-            margin: 0.9em 0em 1.3em 0em;
             border-radius: 1px;
+            height: 5px;
+            margin: 0.9em 0 1.3em 0;
+            width: 90vw;
         }
     }
 
@@ -167,7 +165,7 @@ header>picture {
             height: 140px;
         }
 
-        #hero {
+        .hero {
             max-width: 90vw;
         }
 
@@ -176,26 +174,26 @@ header>picture {
         }
 
         .portfolio__heading {
-            text-transform: initial;
-            padding-bottom: 1.7em;
-            margin-left: 2%;
-            font-size: 2em;
             color: rgb(100,100,100);
+            font-size: 2em;
+            margin-left: 2%;
+            padding-bottom: 1.7em;
+            text-transform: initial;
         }
     }
 
     @media screen and (min-width: 1300px){
         body {
-            width: 1200px;
             margin-left: auto;
             margin-right: auto;
+            width: 1200px;
         }
 
         main::before {
-            height: 5px;
-            width: 1200px;;
             background-color: #a2a2a2;
-            margin: 1.5em 0em 1.7em 0em;
             border-radius: 1px;
+            height: 5px;
+            margin: 1.5em 0 1.7em 0;
+            width: 1200px;;
         }
     }

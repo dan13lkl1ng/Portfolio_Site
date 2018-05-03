@@ -4,3 +4,4 @@
 
 ## Licenses
 * Castle of Karlsruhe by connie_sf (CC0 Creative Commons): https://pixabay.com/de/karlsruhe-schlo%C3%9F-blaue-stunde-1539376/ 
+* normalize.min.css (MIT License)
